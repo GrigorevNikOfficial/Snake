@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+html, body {
+    line-height: 1;
+    font-size: 14px;
+    font-family: 'Amatic SC', "Comic Sans MS" ;
+}
+
+.info {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.info__current-score {
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+.info__best-score {
+    font-size: 30px;
+}
+
+.play {
+    position: relative;
+    margin: auto;
+    max-width: 802px;
+}
+
+.ground {
+    border: 1px solid #000;
+    background-color: #f9f9f9;
+    margin: auto;
+}
+
+.play__menu {
+    opacity: 1;
+    background-color: rgba(18, 168, 130, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 802px;
+    height: 802px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play__menu.inplay {
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    top: -120%;
+    opacity: 0;
+}
+
+.play__button {
+    color: #fff;
+    font-size: 30px;
+    padding: 30px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.lose {
+    top: -200%;
+    display: none;
+}
+
+.lose.inlose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 802px;
+    height: 802px;
+    background-color: rgba(0, 40, 10, 0.7);
+}
+
+.lose__title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 10px;
+    margin: 100px 0;
+}
+
+.lose__button {
+    color: #fff;
+    font-size: 30px;
+    padding: 30px;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}

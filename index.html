@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/index.js" defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Змейка</title>
+    </head>
+    <body>
+        <div class="info">
+            <div class="info__current-score">Текущий счёт: 0</div>
+            <div class="info__best-score">Ваш рекорд: 0</div>
+        </div>
+        
+        <div class="play">
+            <!-- Элемент для отрисовки графики -->
+            <canvas width="801px" height="801px" class="ground"></canvas>
+
+            <!-- Кнопка старта игры -->
+            <div class="play__menu">
+                <div class="play__button">Играть!</div>
+            </div>
+
+            <!-- Заставка проигрыша -->
+            <div class="lose">
+                <div class="lose__title">Ваш счёт: 0!</div>
+                <div class="lose__button">Ещё раз!</div>            
+            </div>          
+        </div>
+    </body>
+</html>

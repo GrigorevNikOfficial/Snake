@@ -23,7 +23,7 @@ html, body {
 .play {
     position: relative;
     margin: auto;
-    max-width: 802px;
+    max-width: 800px;
 }
 
 .ground {

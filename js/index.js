@@ -13,8 +13,6 @@ const grid = 20;
 // Частота обновления
 const FPS = 5;
 
-let playerCurrentScore = 0;
-let playerBestScore = 0;
 let interval;
 
 const player = {
@@ -81,6 +79,7 @@ const move = () => {
     eatFruit();
     crash();
 };
+
 
 const crash = () => {
     if (player.tail.length > 1) {
